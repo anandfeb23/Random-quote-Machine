@@ -1,60 +1,51 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  transition: background 0.5s ease-in-out;
 }
 
-.quote-box {
-  max-width: 600px;
+#quote-box {
   padding: 20px;
-  text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.quote-text {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.quote-author {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  color: #555;
-}
-
-.new-quote-button,
-.tweet-quote-link {
-  padding: 10px 20px;
-  font-size: 1em;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text,
+.quote-author {
+  margin: 0;
+  font-size: 1.2em;
 }
 
 .new-quote-button {
-  background-color: #007bff;
-  color: white;
-  margin-right: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
 }
 
 .new-quote-button:hover {
-  background-color: #0056b3;
+  opacity: 0.8;
 }
 
 .tweet-quote-link {
-  background-color: #1da1f2;
-  color: white;
+  color: #000000;
   text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .tweet-quote-link:hover {
-  background-color: #0d95e8;
+  text-decoration: underline;
 }
